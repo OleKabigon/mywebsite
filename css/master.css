@@ -130,6 +130,7 @@ h2:hover {
 
 .blog-pic {
     overflow: none;
+<<<<<<< HEAD
     display: flex;
     /* flex: auto; */
     flex-direction: row;
@@ -143,6 +144,10 @@ h2:hover {
 
 
 
+=======
+    display: inline;
+    padding: 10px 10px;
+>>>>>>> c0c5fefaec2a67276b7636fb886de638fedeba55
 }
 
 button {
