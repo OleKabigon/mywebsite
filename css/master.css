@@ -128,27 +128,6 @@ h2:hover {
     background-color: lightgrey;
 }
 
-.blog-pic {
-    overflow: none;
-<<<<<<< HEAD
-    display: flex;
-    /* flex: auto; */
-    flex-direction: row;
-    float: right;
-    padding: 1rem;
-    height:auto;
-    width: 15rem;
-    /* position: absolute;
-    right: 0rem;
-    top: 0rem; */
-
-
-
-=======
-    display: inline;
-    padding: 10px 10px;
->>>>>>> c0c5fefaec2a67276b7636fb886de638fedeba55
-}
 
 button {
     padding: 1rem 3rem;
