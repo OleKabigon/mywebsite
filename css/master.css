@@ -84,26 +84,33 @@ html {
     }
 }
 
+header {
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+
 
 /* use # for id */
 /* class has higher imp than element */
 /* h1 is a block element */
-#page-title {
-    color: blue;
-    text-align: center;
-    font-size: 2.8rem;
-
-}
 
 /* class uses period before label */
 .main-section {
     background-color: #ffccff;
+    padding: 3rem;
 }
 img {
     width: 10rem;
 
 }
 article {
+    border: 4px blue solid;
+    border-radius: 10px;
+    margin-bottom: 2rem;
 
 }
 
