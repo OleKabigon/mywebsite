@@ -88,7 +88,7 @@ header {
     background-color: lightblue;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
     padding: 3rem 0;
 }
 
@@ -103,23 +103,34 @@ header {
     background-color: #ffccff;
     padding: 3rem;
 }
-img {
-    width: 10rem;
-
+/* .blog-post {
+    display: flex;
+    flex-flow: column;
+} */
+.blog-post h2 {
+    font-size: 4rem;
+    text-align: center;
+    background-color: white;
 }
+.blog-pic {
+    height: 10rem;
+}
+
+.blog-post {
+    background-color: darkgrey;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 article {
     border: 4px blue solid;
     border-radius: 10px;
-    margin-bottom: 2rem;
-
-}
-
-article h2 {
-
-}
+    margin-bottom: 2rem;}
 
 
-h2:hover {
+
+
+.blog-post h2:hover {
     background-color: yellow;
 }
 
