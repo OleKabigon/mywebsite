@@ -13,49 +13,86 @@ html {
     and the number is a multiplier of 10*/
 }
 
-header {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: lightpink;
-    padding: .5rem;
-    font-size: 2rem;
-    text-align: center;
-    font-style: italic;
-    color: darkgreen;
+    color: white;
+    /* height: 5rem; */
 }
-
-nav {
-    background-color: #b3ffb3;
-    overflow: hidden;
-    width: 100%;
+.logo {
+    font-size: 3rem;
+    margin-left: 2rem;
 }
-
-nav.nav-bar {
-    /* float: right; */
-    color: black;
-    text-align: right;
-    padding: 10px;
-    font-size: 1.5rem;
+.navbar-links ul {
+    display: flex;
+    margin-right: 2rem;
 }
-
-.nav-bar a {
-    /* a is an inline element */
-    background-color: #3366ff;
-    padding: 2px 14px;
-    color: black;
-    margin-right: 15px;
+.navbar-links li a {
+    background-color: blue;
+    border-radius: 50%;
+    padding: .8rem;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 1rem;
 }
-
-.nav-bar a:hover {
+.navbar-links a:hover {
     background-color: black;
     color: white;
 }
+.toggle-button {
+    position: absolute;
+    top: .7rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        }
+    .navbar-links li {
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
 
 /* use # for id */
 /* class has higher imp than element */
 /* h1 is a block element */
-h1#page-title {
-    color: green
+#page-title {
+    color: blue;
     text-align: center;
-    /* this has no effect since header has styling */
+    font-size: 2.8rem;
+
 }
 
 /* class uses period before label */
@@ -63,69 +100,25 @@ h1#page-title {
     background-color: #ffccff;
 }
 img {
-    display: inline-flex;
-    align-self: flex-end;
-    margin: 1rem;
-    width: 15rem;
+    width: 10rem;
 
 }
 article {
-    /* display: flex; */
-    margin: 2rem 3rem;
-    /* border-style: solid;
-    border-width: 1px; */
-    border-radius: .8rem;
-    border: .3rem solid blue;
-    padding: 2rem 3rem;
-    font-size: 1.8rem;
-
 
 }
-/* article p {
-    position: relative;
-} */
 
 article h2 {
-    text-align: center;
-    /* margin-bottom: 5rem; */
-    font-size: 2rem;
-    /* has no size effect with "section article h2" */
-    text-decoration: underline;
+
 }
-section article h2 {
-    /* controls text vs other */
-    font-size: 4rem;
-    text-decoration: none;
-    font-style: italic;
-    /* margin-bottom: 10rem; */
-    /* padding: 5rem; */
-}
-article p {
-    margin: 2rem;
-}
+
+
 h2:hover {
-    background-color: lightpink;
+    background-color: yellow;
 }
-/* .article-title {
-    text-decoration: underline;
-} */
-/* section h2 {
-    text-align: center;
-    padding: 50px;
-} */
+
 
 .main-aside {
-    /* flex-direction: column;
 
-    box-sizing: content-box; */
-    /* position: absolute;
-    right: 0rem;
-    float: right; */
-    border: .4rem solid black;
-    margin: 5rem;
-    padding: 1rem;
-    width: 30%;
-    background-color: lightgrey;
 }
 
 
@@ -152,17 +145,10 @@ button {
     font-family: fantasy;
 }
 h2#gallery {
-    text-align: center;
-    font-size: 3rem;
-    padding: 3rem;
-    margin: 10rem;
-    background-color: blue;
-    width: 100%;
+
 }
 section#gallery {
-    text-align: center;
-    font-size: 5rem;
-    padding: 3rem;
+
 }
 footer {
     background-color: lightpink;
